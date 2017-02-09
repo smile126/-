@@ -6,6 +6,10 @@ class One2{
 		
 	}
 
+	public function new1(){
+		
+	}
+
 }
 
 
