@@ -1,18 +1,27 @@
 <?php
 
-class One2{
+namespace TypiCMS\Modules\Bussinessplans\Repositories;
 
-	public function one2(){
-		
+use Dingo\Api\Auth\Auth;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
+use TypiCMS\Modules\Bussinessplans\Models\BusinessPlanModel;
+use TypiCMS\Modules\Bussinessplans\Models\BussinessplanModel;
+use TypiCMS\Modules\Bussinessplans\Models\MajorProduct;
+use TypiCMS\Modules\Core\Repositories\RepositoriesAbstract;
+
+Class EloquentBussinessplan extends RepositoriesAbstract implements BussinessplanInterface
+{
+	public function __construct(Model $model)
+	{
+		$this->model = $model;
 	}
 
-	public function new1(){
-
-		$a = 1;
-		
+	public function setModel(Model $model)
+	{
+		$this->model = $model;
 	}
-
-
 }
+
 
 
